@@ -1,0 +1,227 @@
+@import url(https://fonts.google.com/specimen/Rubik+Bubbles?preview.text=123456789&preview.text_type=custom);
+html{
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    background-color: #FDFEEE;
+    overflow: hidden;
+}
+Main{
+    z-index: 2;
+    background-image:  url(https://static.vecteezy.com/system/resources/previews/004/750/609/original/flat-design-abstract-background-soft-liquid-shapes-template-with-modern-gradient-background-colors-cool-aesthetic-background-design-suitable-for-social-media-post-mobile-app-banner-web-ads-free-vector.jpg);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 10% 1fr 20%;
+    transition: transform;
+    transition: cubic-bezier(.13,.53,.38,.97);
+    transition-duration: 500ms;
+}
+.Image{
+    justify-self: center;
+    display: block;
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 1em;
+    width: 17em;
+    transition: transform;
+    transition: cubic-bezier(.13,.53,.38,.97);
+    transition-duration: 500ms;
+}
+Button{
+    border: none;
+}
+.ClickButton{ 
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 10em;
+    font-size: 50px;
+}
+.GoldAmount{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 100px;
+    text-align: center;
+    transition: transform;
+    transition: cubic-bezier(.13,.53,.38,.97);
+    transition-duration: 500ms;
+}
+.GoldAmount span{
+    justify-self: center;
+    align-self: center;
+}
+.BuyMenu{
+    grid-row: 2;
+    grid-column: 3;
+}
+.BuyTab button{
+    width: 100%;
+    font-size: 1em;
+    height: 2em;
+}
+.BuyTab{
+    display: flex;
+    flex-direction: row;
+}
+.Upgrades button{
+    width: 100%;
+    height: 5%;
+    font-size: 1.5em;
+}
+.Outfits button{
+    width: 100%;
+    height: 5%;
+    font-size: 1.5em;
+}
+.Upgrades{
+display: flex;
+flex-direction: column;
+}
+
+
+.OutfitToggle{
+    height: 3.5rem;
+    width: 3.5rem;
+    position: fixed;
+    left: 48%;
+    z-index: 3;
+    bottom: 3rem;
+    background-color: #FDFEEE ;
+    border-radius: 1em;
+    transition: transform;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+.OutfitToggle:hover{
+    transform: scale(1.1);
+}
+.OutfitToggle:active{
+    transform: scale(0.9);
+}
+.OutfitToggle img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.09);
+    
+}
+body[data-outfit="true"] main {
+    transform: translateY(-30%);
+}
+body[data-outfit="true"] .GoldAmount {
+    transform: translateY(300%);
+}
+body[data-outfit="true"] .Image {
+    transform: translate(270%, 52.5%) scale(1.1);
+}
+.Clothes{
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.OutfitImages{
+    display: flex;
+    gap: 2em;
+    margin-top: 3em;
+    margin-left: 3em; 
+    
+}
+.OutfitImages img{
+    height: 10em;
+    width: 10em; 
+    border-radius: 2em;
+    
+}
+
+.outfitsbody{
+    display: grid;
+    grid-template-columns: 1em auto 1em;
+    grid-template-rows: 6em 30% 30% 30% 30% 30%;
+    height: 100%;
+}
+
+
+
+
+.outfitsrows{
+    grid-column: 2;
+    grid-row: 2/-1;
+}
+.ImageRow1{
+    margin-left: 1em;
+    grid-row: 1;
+    display: flex;
+    gap: 2em;
+}
+.ImageRow1 img{
+    height: 10em;
+}
+.ImageRow2{
+    
+}
+.ImageRow3{
+    
+}
+
+@media screen and (max-width: 880px) {
+    .BuyMenu{
+        display: none;
+    }
+    .Image{
+        align-self: center;
+        justify-self: center;
+        grid-row: 2;
+        grid-column: 1/4;
+        margin-left: 1vh;
+        
+    }
+    .MobileUpgradeButton{
+        display: block;
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .MobileUpgradeButton button{
+        width: 100%;
+        height: 4em;
+    }
+    .GoldAmount{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+        grid-row: 1;
+        grid-column: 2;
+        font-size: 2em;
+        text-align: center;
+    }
+    .Clothes{
+        display: none;
+    }
+    .OutfitToggle{
+        display: none;
+    }
+}
+.MobileUpgrades{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.MobileUpgrades button{
+    height: 3em;
+}
+
+.theme-light {
+    --Background-Color:  url(https://static.vecteezy.com/system/resources/previews/004/750/609/original/flat-design-abstract-background-soft-liquid-shapes-template-with-modern-gradient-background-colors-cool-aesthetic-background-design-suitable-for-social-media-post-mobile-app-banner-web-ads-free-vector.jpg) ;
+    --Primary-Color: #00ccff8c;
+    --NonTransparentPrimaryColor: #73e2f9;
+    --Text-Color: #Ffff ;
+}

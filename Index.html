@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gato Clicker</title>
+    <script defer src="CookieFunction.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="startbody" data-outfit="false">
+    <main>
+
+    <div class="Image">
+        <img class="ClickImage" src="https://preview.redd.it/enhthec9oiv81.jpg?auto=webp&s=51eb05980cf0b07b08883a3f5c9bc9bd0e026825" alt="click cat" width="100%">
+    </div>
+    <div class="ClickButton">
+    </div>
+    <div class="GoldAmount">
+        <span class="GoldAmount" id="GoldAmount" >0 </span>
+    </div>
+    <div class="BuyMenu">
+        <div class="BuyTab">
+            <button class="OutfitsTab" type="button" width="100%"> Outfits </button> 
+            <button class="UpgradesTab" type="button" width="100%"> Upgrades </button> 
+        </div>
+        <div class="Upgrades">
+            <button class="Upgrade1" type="button" width="100%"> 10 </button> 
+            <button class="Upgrade2 MoneyOverTime" type="button" width="100%"> 100 </button> 
+            <button class="Upgrade3 MoneyOverTime" type="button" width="100%"> 500 </button> 
+            <button class="Upgrade4 MoneyOverTime" type="button" width="100%"> 5000 </button> 
+            <button class="Upgrade5 MoneyOverTime" type="button" width="100%"> 50000 </button> 
+            <button class="Upgrade6 MoneyOverTime" type="button" width="100%"> 100000 </button> 
+            <button class="Upgrade7 MoneyOverTime" type="button" width="100%"> 2000000 </button> 
+            <button class="Upgrade8 MoneyOverTime" type="button" width="100%"> 30000000 </button> 
+        </div>
+        <div hidden class="Outfits">
+            <button class="Outfit1" type="button" width="100%"> 1000 </button> 
+            <button class="Outfit2" type="button" width="100%"> 100000 </button> 
+        </div>
+    </div>
+    <div hidden class="MobileUpgradeButton">
+        <a href="MobileUpgrades.html"><button> Upgrades</button></a>
+        <a href="Outfits.html"><button> Outfits</button></a>
+    </div>
+    <ul Class="InventoryList">
+    </ul>
+    
+    <div>
+        <button class="OutfitToggle" type="button" onclick="ToggleOutfits()">  <img src="https://cdn-icons-png.flaticon.com/512/3159/3159614.png" alt="Purchase Outfits">  </button>
+    </div>
+    </main>
+    <div class="Clothes">
+        <div class="OutfitImages">
+            <img class="OutfitImage" data--Price="0"src="https://preview.redd.it/enhthec9oiv81.jpg?auto=webp&s=51eb05980cf0b07b08883a3f5c9bc9bd0e026825"  alt="">
+            <img class="OutfitImage" data--Price="10000" src="https://i.redd.it/voo4l2gkrex81.jpg" alt="">
+            <img class="OutfitImage" data--Price="10000" src="https://preview.redd.it/w2qh4yqxngw81.jpg?width=960&crop=smart&auto=webp&v=enabled&s=8f19510c51393aad9198dcb8c08a21d8a69b926c" alt="">
+            <img class="OutfitImage" data--Price="100000" src="https://i.pinimg.com/474x/97/67/13/9767132c68bee05a87e1f294e79fe17d.jpg" alt="">
+            <img class="OutfitImage" data--Price="1000000" src="https://i.pinimg.com/736x/53/1f/89/531f894c43e967d82bb037c68e9e13eb.jpg" alt="">
+            <img class="OutfitImage" data--Price="10000000" src="https://i.pinimg.com/564x/67/e8/98/67e898344d7906d3774f780c1167c855.jpg" alt="">
+            <img class="OutfitImage" data--Price="10000000" src="https://i.pinimg.com/564x/a3/5a/90/a35a9055551549b662ef4082edea584b.jpg" alt="">
+            <img class="OutfitImage" data--Price="100000000" src="https://i.pinimg.com/236x/92/75/62/927562034dc44fb79ceb34c54817ec5b.jpg" alt="">
+            <img class="OutfitImage" data--Price="100000000" src="https://i.pinimg.com/236x/93/cf/88/93cf8849b37072d2ceab53711c4e8a50.jpg" alt="">
+        </div>
+        <div class="OutfitPrices">
+
+        </div>
+    </div>
+</body>
+</html>
